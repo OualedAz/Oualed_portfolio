@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Color</title>
+    <link rel="stylesheet" href="css/color-style.css">
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <h1>Guess the Color</h1>
+            <select name="colorValue" id="colorValue">
+                <option value="none">--Select Option--</option>
+                <option value="hex">#Hexadecimal</option>
+                <option value="rgb">RGB</option>
+
+            </select>
+        </header>
+        <main>
+            <article>
+                <h2 id="title"></h2>
+            </article>
+            <article id="explanation">
+                <p>
+                    This page is a fun game where you try to guess the correct color using
+                    <strong>RGB</strong> or <strong>Hexadecimal</strong> values. You can play it for fun
+                    or use it to practice and improve your understanding of how digital colors work!
+                </p>
+
+                <h2>About RGB and Hexadecimal syntax</h2>
+                <ul>
+                    <li>
+                        <strong>RGB</strong> stands for Red, Green, and Blue. It is written like this:
+                        <code>rgb(255, 0, 0)</code>. Each number goes from <strong>0 to 255</strong>,
+                        representing the intensity of each color.
+                    </li>
+
+                    <li>
+                        <strong>Hexadecimal</strong> colors start with <code>#</code> and use six characters,
+                        like <code>#FF0000</code>. The first two represent red, the next two green,
+                        and the last two blue. Hex uses numbers <strong>0–9</strong> and letters
+                        <strong>A–F</strong>.
+                    </li>
+                </ul>
+            </article>
+            <article id="showBtn"></article>
+            <p id="feedback"></p>
+            <button id="start">Press to start the Game</button>
+            <button type="reset" id="restart">Restart the Game</button>
+        </main>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

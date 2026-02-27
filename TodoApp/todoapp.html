@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>ToDo App</h1>
+    <article id="error" class=""></article>
+
+    <article id="container" class="wrapper">
+      <div class="send">
+        <input
+          id="todo-input"
+          type="text"
+          placeholder="Write anything and hit enter to add"
+          autocomplete="off"
+        />
+        <button id="addBtn">ADD</button>
+      </div>
+      <h3>To Do</h3>
+      <hr>
+      <ul id="todo-list"></ul>
+      <h3>Completed</h3>
+      <hr>
+      <ul id="todoListCompleted"></ul>
+    </article>
+    <script src="js/todoApp.js"></script>
+    <script src="js/svg.js"></script>
+  </body>
+</html>

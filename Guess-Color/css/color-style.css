@@ -1,0 +1,183 @@
+/* ===== Base Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #f8f9fb;
+    color: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== Layout ===== */
+.container {
+    width: 90%;
+    max-width: 720px;
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* ===== Header ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+#title {
+    text-align: center;
+    font-size: 3em;
+}
+
+/* Select */
+#colorValue {
+    border: 1px solid #e5e7eb;
+    background: transparent;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #333;
+    transition: border 0.2s ease;
+}
+
+#colorValue:focus {
+    outline: none;
+    border-color: #111;
+}
+
+/* ===== Main ===== */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Explanation */
+#explanation {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+#explanation h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1.5rem 0 0.8rem 0;
+}
+
+#explanation ul {
+    padding-left: 1.2rem;
+}
+
+#explanation li {
+    margin-bottom: 0.8rem;
+}
+
+#explanation code {
+    background: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+/* Feedback */
+#feedback {
+    font-size: 1.5rem;
+    min-height: 20px;
+    padding: .8rem .4rem;
+    border-radius: .8rem;
+
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    display: block;
+}
+
+.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    display: block;
+}
+
+#showBtn {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#showBtn button:hover {
+    transform: translateY(1px);
+}
+
+/* ===== Buttons ===== */
+#start,
+#restart {
+    border: 1px solid #111;
+    background: transparent;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#start:hover,
+#restart:hover {
+    background: #111;
+    color: #fff;
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .container {
+        padding: 2rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+}
+
+
+
+
+
+
+/*------ M ------*/
+#showBtn button {
+    width: 150px;
+    height: 150px;
+    margin: .8rem;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dis-b {
+    opacity: .6;
+    pointer-events: none;
+}
