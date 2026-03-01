@@ -92,7 +92,7 @@ const colorBTnRgb = () => {
                 console.log("correcto");
                 feedBack.classList.remove("error");
                 feedBack.classList.add("success");
-                feedBack.textContent = "Felicidades Correcto";
+                feedBack.textContent = "Congratulations You Won!!";
                 setTimeout(() => {
                     title.innerHTML = "";
                     showColor.innerHTML = "";
@@ -108,7 +108,7 @@ const colorBTnRgb = () => {
                 console.log("incorrecto");
                 feedBack.classList.remove("success");
                 feedBack.classList.add("error");
-                feedBack.textContent = "Color incorrecto";
+                feedBack.textContent = "Wrong Color!!";
                 btn.classList.add("dis-b");
             }
         });
@@ -148,7 +148,7 @@ const colorBtnHex = () => {
                 console.log("correcto");
                 feedBack.classList.remove("error");
                 feedBack.classList.add("success");
-                feedBack.textContent = "Felicidades Correcto";
+                feedBack.textContent = "Congratulations You Won!!";
                 setTimeout(() => {
                     title.innerHTML = "";
                     showColor.innerHTML = "";
@@ -164,7 +164,7 @@ const colorBtnHex = () => {
                 console.log("incorrecto");
                 feedBack.classList.remove("success");
                 feedBack.classList.add("error");
-                feedBack.textContent = "Color incorrecto";
+                feedBack.textContent = "Wrong Color!!";
                 btn.classList.add("dis-b");
             }
         });

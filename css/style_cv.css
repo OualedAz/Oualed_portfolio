@@ -29,8 +29,11 @@ body {
 
 .project a{
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-  min-width: 300px;
-  min-height: 250px;
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 1rem;
 
 }
 
@@ -43,6 +46,7 @@ body {
   border-radius: 8px;
   border: none;
   pointer-events: none;
+  display: block;
 }
 
 .container {
